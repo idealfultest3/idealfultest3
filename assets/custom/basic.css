@@ -1,0 +1,26 @@
+.show__d {
+  display: block !important;
+}
+
+.hide__d {
+  display: none !important;
+}
+
+.show__v {
+  visibility: visible !important;
+}
+
+.hide__v {
+  visibility: hidden !important;
+}
+
+.adjust__text1 {
+  position: relative;
+  top: 0.2rem;
+}
+
+.dropdown-menu-right {
+  top: 100% !important;
+  left: -7rem !important;
+  margin-top: 0.125rem !important;
+}

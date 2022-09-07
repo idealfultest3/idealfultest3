@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap 테스트</title>
+
+    <link rel="stylesheet" href="./assets/boostrap/default/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/boostrap/offcanvas-navbar/offcanvas.css" />
+
+    <link rel="stylesheet" href="./assets/custom/basic.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header></header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Schedule Checker</a>
+          <button
+            class="navbar-toggler p-0 border-0"
+            type="button"
+            id="navbarSideCollapse"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">홈</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdown01"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="true"
+                  >게시판</a
+                >
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdown01">
+                  <li>
+                    <a class="dropdown-item" href="./board.html">공지사항</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./board.html">일반</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./board.html">FAQ</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="dropdown02"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="true"
+                  >
+                    <img id="profile_img" src="http://picsum.photos/20" class="rounded-circle" alt="사용자 이미지" />
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-right" aria-labelledby="dropdown02">
+                    <li>
+                      <a class="dropdown-item" href="./profile.html">프로필</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">로그아웃</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex">
+              <a class="btn btn-outline-light" id="btnLogin" href="./login.html">로그인</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <table class="table table-striped table-hover mt-5">
+          <thead>
+            <tr>
+              <th scope="col" class="text-nowrap">순번</th>
+              <th scope="col" class="text-nowrap">이름</th>
+              <th scope="col" class="text-nowrap">제목</th>
+              <th scope="col" class="text-nowrap">날짜</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>김철수</td>
+              <td>안녕하세요.</td>
+              <td>2022-04-19 00:00:03</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>홍길동</td>
+              <td>첫 게시물입니다.</td>
+              <td>2022-04-19 00:00:02</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>관리자</td>
+              <td>환영합니다.</td>
+              <td>2022-04-19 00:00:01</td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+      <footer class="my-1">
+        <div class="border-top mb-3"></div>
+        <p class="text-center text-muted">&copy; 2022 idealful@gmail.com</p>
+      </footer>
+    </div>
+    <script src="./assets/boostrap/default/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/boostrap/offcanvas-navbar/offcanvas.js"></script>
+  </body>
+</html>
